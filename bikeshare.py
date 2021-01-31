@@ -36,10 +36,12 @@ def get_filters():
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
     day = None
-    day_filter = ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+    day_filter = ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday',
+                  'saturday', 'sunday']
     while day not in day_filter:
         day = input("\nFilter data by day of the week\n"
-                    "[ all, monday, tuesday, wednesday, thursday, friday, saturday, sunday ] : ").lower()
+                    "[ all, monday, tuesday, wednesday, thursday, friday,"
+                    " saturday, sunday ] : ").lower()
 
     print('-'*40, '\n')
     return city, month, day
@@ -187,8 +189,6 @@ def user_stats(df):
     print()
     print('Calculating User Stats')
     start_time = time.time()
-
-    # Display user stats
 
     # Display counts of user types
     if 'User Type' in df.columns:
