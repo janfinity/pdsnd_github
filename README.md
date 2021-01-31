@@ -5,7 +5,7 @@
 Bikeshare Project Submission
 
 ### Description
-Analyze bikesharing data of three different US cities (NY, Chicago, Washington)
+Analyzing bikesharing data of three different US cities (NY, Chicago, Washington)
 
 ### Files used
 chicago.csv | All bikesharing data of the city of chicago
